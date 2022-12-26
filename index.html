@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <form action="connect.php"></form>
+</head>
+<body>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        swal({
+            title:'socialbook',
+            text:'دردش الان وشارك منشوراتك'
+        })
+    </script>
+    <script src="main.js"></script>
+    <nav>
+        <div class="nav-left">
+            <img src="images\logo1.png" class="logo">
+            <ul>
+                <li><img src="images\notification.png" id="not"></li>
+                <li><img src="images\inbox.png" id="inb"></li>
+                <li><img src="images\video.png" id="vid"></li>
+            </ul>
+            <script src="https://unpkg.com/@popperjs/core@2"></script>
+            <script src="https://unpkg.com/tippy.js@6"></script>
+            <script>
+                
+            </script>
+        </div>
+        <div class="nav-right">
+        <div class="search">
+            <img src="images\search.png" id="logo1">
+            <input type="text" placeholder=" Linkbook بحث في " id="sea">
+        </div>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+
+        <script>
+            tippy('#logo1 , #sea',{
+                content:'بحث'
+            });
+        </script>
+        <div class="nav-user-icon">
+            <img src="images/profile-pic.png">
+        </div>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+             tippy('.nav-user-icon',{
+                content:'حسابك'
+            })
+        </script>
+      </div>
+    </nav>
+    <!-- container -->
+    <div class="container">
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="emp-links">
+                <a href="#"><img src="images/profile-home.png" id="m">الرئيسية</a>
+                <a href="#"><img src="images/friends.png">الاصدقاء</a>
+                <a href="#"><img src="images/group.png">المجموعات</a>
+                <a href="#"><img src="images/marketplace.png">تسوق</a>
+                <a href="#"><img src="images/watch.png">مشاهدة</a>
+                <a><img src="images/setting.png" id="set">الاعدادت</a>
+                <a href=""><img src="images/news.png">اخر الاخبار</a>
+                <a href=""><img src="images/help.png" id="help">مساعدة</a>
+                <a href=""><img src="images/_JPdPzLmp9j.png" id="j">عمل اعلان</a>
+                <a href=""><img src="images/-XF4FQcre_i.png" id="x">كروبات مبرمجين</a>
+            </div>
+            <div class="shortcuts">
+                <p>your shortcuts</p>
+                <a href="#" id="le"><img src="images/shortcut-1.png" id="le"> learn python</a>
+                <a href="#" id="la"><img src="images/shortcut-2.png" id="la"> learn java</a>
+                <a href="#" id="li"><img src="images/shortcut-3.png" id="li"> learn php</a>
+                <a href="#" id="ly"><img src="images/shortcut-4.png" id="ly"> learn c++</a>
+            <script src="https://unpkg.com/@popperjs/core@2"></script>
+            <script src="https://unpkg.com/tippy.js@6"></script>
+            <script>
+                tippy('#le',{
+                content:'تعلم لغة البايثون'
+               })
+               tippy('#la',{
+                content:'تعلم لغة الجافا'
+               })
+
+               tippy('#li',{
+                content:'تعلم بي اتش بي'
+               })
+
+               tippy('#ly',{
+                content:'تعلم سي بلس بلس'
+               })
+            </script>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+        <!-- main-content -->
+            <div class="main-content">
+                <div class="story-galary">
+                    <div class="story">
+                        <img src="images/upload.png" id="im">
+                        <p>انشاء قصة</p>
+                </div>
+                <div class="story s1">
+                    <img src="images/member-1.png">
+                    <p>زينب</p>
+            </div>
+            <div class="story s2">
+                <img src="images/member-2.png">
+                <p>علي</p>
+           </div>
+           <div class="story s3">
+            <img src="images/member-4.png">
+            <p>حيدر</p>
+           </div>
+           <div class="story s4">
+            <img src="images/member-3.png">
+            <p>ميمونة</p>
+            </div>
+        </div>
+        <div class="write-post">
+            <div class="user-profile">
+            <img src="images/profile-pic.png" alt="">
+            <div>
+                <p>محمد علي</p>
+     
+                <small>عامة</small>
+            </div>
+        </div>
+        <div class="post-input">
+            <textarea rows="3" placeholder="write ..., something ....."></textarea>
+            <div class="add-post-links">
+                <a href="#"><img src="images/live-video.png" width="40px">بث مباشر</a>
+                <a href="#"><img src="images/photo.png" width="40px">صورة/ فيديو</a>
+                <a href="#"><img src="images/feeling.png" width="40px">Feeling/Activity</a>
+            </div>
+        </div>
+    </div>
+    <div class="posting">
+        <div class="user-profile">
+            <img src="images/profile-pic.png" alt="">
+            <div>
+                <p>Muhammed Ali</p>
+                <small>اغسطس 20 2022 ,  1:26 م</small>
+            </div>
+        </div>
+        <p>Learn python with Muhammed Abdelnassr  please subscribe <a href="https://www.youtube.com/channel/UCgiVFR0T3kD-KpUyXQagX-w" target="_blank">our channel</a></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kkeTzfOBM2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="com-share-like">
+            <div class="icons">
+                <div><img src="images/like-blue.png">اعجبني</div>
+                <div><img src="images/comments.png">تعليق</div>
+                <div><img src="images/share.png">مشاركة</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="posting">
+        <div class="user-profile">
+            <img src="images/profile-pic.png" alt="">
+            <div>
+                <p>Muhammed Ali</p>
+                <small>اغسطس 20 2022 ,  1:26 م</small>
+            </div>
+        </div>
+        <p>تعلم بايثون مع المبرمج محمد عبدالناصر الرجاء اشتراك <a href="https://www.youtube.com/channel/UCgiVFR0T3kD-KpUyXQagX-w" target="_blank">our channel</a></p>
+        <img src="images/cover-10.jpg" width="100%">
+        <div class="com-share-like">
+            <div class="icons">
+                <div><img src="images/like-blue.png">اعجبني</div>
+                <div><img src="images/comments.png">تعليق</div>
+                <div><img src="images/share.png">مشاركة</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- right-sidebar -->
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See More</a>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>20</h3>
+                    <span>March</span>
+                    </div>
+                </div>
+                <div class="right-event">
+                    <h3>Birthday</h3>
+                    <p>Muhammed Ali , Iraq</p>
+                    <a href="#">More Info</a>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>10</h3>
+                    <span>April</span>
+                    </div>
+                </div>
+                <div class="right-event">
+                    <h3>Birthday</h3>
+                    <p>Ahmed Ali , Iraq</p>
+                    <a href="#">More Info</a>
+                </div>
+                <div class="sidebar-title">
+                    <h3>Advertisement</h3>
+                    <a href="#">Close</a>
+                </div>
+                <img src="images/max.jpg" class="side">
+                 <p id="pa">جهات الاتصال</p>
+                <div class="short">
+                    <p><img src="images/member-2.png" id="al"></p>
+                
+                    <p><img src="images/member-1.png" id="zai"></p>
+                    
+                
+                    <p><img src="images/member-3.png" id="mai"></p>
+                    
+                
+                    <p><img src="images/member-4.png" id="hai"></p>
+                    
+                    <script src="https://unpkg.com/@popperjs/core@2"></script>
+                    <script src="https://unpkg.com/tippy.js@6"></script>
+                    <script>
+                         tippy('#al',{
+                         content:'علي'
+                        });
+                        tippy('#zai',{
+                         content:'زينب'
+                        });
+                        tippy('#mai',{
+                         content:'ميمونة'
+                        });
+                        tippy('#hai',{
+                         content:'حيدر'
+                        });
+                    </script>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <center>
+        <p>تم التصميم والتطوير من قبل المبرمج محمد عبدالناصر</p>
+        </center>
+</body>
+</html>
